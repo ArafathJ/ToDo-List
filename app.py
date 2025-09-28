@@ -16,7 +16,7 @@ class MyTask(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     content = db.Column(db.String[100], nullable = False )
     complete = db.Column(db.Integer, default = 0)
-    created = db.Column(db.DateTime, default = datetime.utcnow)
+    created = db.Column(db.DateTime, default = datetime.now())
     
     def __repr__(self) -> str:
         return f"Task {self.id}"
@@ -48,7 +48,7 @@ def delete(id: int):
     try:
         db.session.delete(delete_task)
         db.session.commit()
-        return redirect('/')
+        return redirect('/')q
     except Exception as e:
         return f"ERROR:{e}"
 
