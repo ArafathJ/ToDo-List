@@ -25,4 +25,17 @@ This project was built as a fun break from my Data Science work, but it turned o
 - **Git** – Version control  
 
 ---
+## 📌 Future Improvements
+
+- Add user authentication
+
+- Add due dates and reminders
+
+- Deploy it on Render/Herok
+
+---
+## 📝LICENSE
+This project is open-source and available under the MIT License
+
+---
 
